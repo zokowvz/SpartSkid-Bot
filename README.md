@@ -14,7 +14,9 @@
 ##  
 
  
-### 🍬 Infos
+- ### 🍬 Infos
+          - c'est un bot entre potes donc je ne sais pas trop à quoi il va vous servir mais oklm !
+
  
 
 #   
