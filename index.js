@@ -1,8 +1,6 @@
  // spartix sale skid j'vais te mettre des commentaires un peu partout parce que t'es un skid tu ne dois sûrement pas comprendre.
  // spartskid #v1, si il y a des erreurs mp zkw#1234 et si mon tag change rejoins discord.gg/lightgen. 
       // edit 19/02/22 : j'ai sauté avec LightGen, new serveur discord.gg/lgen.
-         // edit 27/03/22 : url unbl, go join discord.gg/lightgen, new tag: zokow#1234.
-
 
 
 // les constantes
@@ -12,14 +10,13 @@ const token = require('./config.json');
 const owner = require('./config.json');
 const config = require('./config.json');
 const color = require('./config.json');
-const chalk = require("chalk");
 const pagination = require('discord.js-pagination');
 const { MessageEmbed } = require('discord.js');
 const botlog = require('./config.json')
 const prefix = config.prefix;
 client.on('ready', () => {
   console.clear(),         
-  console.log(chalk.blue("\n\n\n\n                                        [+]") + ( ` ${client.user.tag}` +  " connecté maître zokow"))
+  console.log("\n\n\n\n                           [+]") + ( ` ${client.user.tag}` +  " connecté maître zokow")
 
 // activité du bot
 client.user.setPresence({ activity: { name: "SpartSkid", type: 1, url: "https://twitch.tv/zokowlive"}})
@@ -67,7 +64,7 @@ client.on('message', (message) => {
    const timeout = '120000';
    
    pagination(message, pages, emojiList, timeout)
-   console.log(chalk.red("\n [$]") + ("  commande Help executée"))
+   console.log("\n [$]") + ("  commande Help executée")
   
      }
 
@@ -82,7 +79,7 @@ client.on('message', (message) => {
        .setColor(config.color)
        .setFooter("SpartSkid v1 - by zokow")
        message.channel.send(embedstatiskiddugrosspartix)
-       console.log(chalk.red("\n [$]") + ("  commande StatiSkid executée"))
+       console.log("\n [$]") + ("  commande StatiSkid executée")
 
     }
 
@@ -100,7 +97,7 @@ client.on('message', (message) => {
             .setColor(config.color)
             .setFooter("SpartSkid v1 - by zokow")
           message.channel.send(embedinfobot)
-          console.log(chalk.red("\n [$]") + ("  commande InfoBot executée"))
+          console.log("\n [$]") + ("  commande InfoBot executée")
         }
  
 
@@ -115,7 +112,7 @@ client.on('message', (message) => {
               .setColor(config.color)
               .setFooter("SpartSkid v1 by zokow")
            message.channel.send(lagrossegothiquedeguelassedespartixquiadesgrosseinscommemabite)
-           console.log(chalk.red("\n [$]") + ("  commande SpartGothique executée"))
+           console.log("\n [$]") + ("  commande SpartGothique executée")
           }
   
 
@@ -128,7 +125,7 @@ client.on('message', (message) => {
             .setColor(config.color)
             .setFooter("SpartSkid v1 - by zokow")
             message.channel.send(soutienembed)
-            console.log(chalk.red("\n [$]") + ("  commande soutien executée"))
+            console.log("\n [$]") + ("  commande soutien executée")
 
           }
  
@@ -143,7 +140,7 @@ client.on('message', (message) => {
             .setColor(config.color)
             .setFooter("SpartSkid v1 - by zokow")
             message.channel.send(lightgen)
-            console.log(chalk.red("\n [$]") + ("  commande LightGen executée"))
+            console.log("\n [$]") + ("  commande LightGen executée")
           }
 
           if(command == prefix + "spartzemmour"){
@@ -154,16 +151,16 @@ client.on('message', (message) => {
             .setFooter("SpartSkid v1 - by zokow")
             .setDescription("Saviez-vous que Spartix porte un grand amour pour Zemmour ?")    
             message.channel.send(spartzemmour)
-            console.log(chalk.red("\n [$]") + ("  commande SpartZemmour executée"))
+            console.log("\n [$]") + ("  commande SpartZemmour executée")
         }       
     
     if(command == prefix + "ping"){
       const pingembed = new MessageEmbed()
-      .addField("Ping", message.translate.general.ping.api, `${msg.createdAt - message.createdAt + "ms"}`, true)
+      .addField("Ping", `${message.createdAt - message.createdAt + "ms"}`, true)
       .addField("Latence", `${client.ws.ping}ms`, true)
       .setColor(config.color)
       message.channel.send(pingembed)
-      console.log(chalk.red("\n [$]") + ("  commande Ping executée"))
+      console.log("\n [$]") + ("  commande Ping executée")
 
 
     }
@@ -178,7 +175,7 @@ client.on('message', (message) => {
                 .setDescription("**Le bot a redémarré avec succès !**")
                 .setColor(config.color)
                 message.channel.send(reloadembed).then(() => bot.destroy()).then(() => bot.login(config.token)).then(() => message.channel.send(reloadembed2)) 
-                console.log(chalk.red("\n [$]") + ("  commande Reload executée"))
+                console.log("\n [$]") + ("  commande Reload executée")
  
                 }
               } 
