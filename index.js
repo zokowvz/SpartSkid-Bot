@@ -1,6 +1,8 @@
  // spartix sale skid j'vais te mettre des commentaires un peu partout parce que t'es un skid tu ne dois sûrement pas comprendre.
  // spartskid #v1, si il y a des erreurs mp zkw#1234 et si mon tag change rejoins discord.gg/lightgen. 
       // edit 19/02/22 : j'ai sauté avec LightGen, new serveur discord.gg/lgen.
+         // edit 27/03/22 : url unbl, go join discord.gg/lightgen, new tag: zokow#1234.
+
 
 
 // les constantes
