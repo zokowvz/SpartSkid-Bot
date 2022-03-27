@@ -1,5 +1,5 @@
 <p>
-  <a href="https://discord.gg/lightgen">Discord</a> |
+  <a href="https://discord.gg/lightgen">Discord</a>
 </p>
 
 ##  
