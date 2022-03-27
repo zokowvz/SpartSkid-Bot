@@ -15,7 +15,7 @@
 
  
 
-##   
+#   
 
 ### 🧰 Support
 - Discord: https://discord.gg/lightgen
